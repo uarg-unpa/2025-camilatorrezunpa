@@ -1,0 +1,27 @@
+package tp1;
+import java.util.Scanner;
+
+public class Ejercicio3 {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int A, B, C, AUX;
+        
+        System.out.print(s:"Ingrese el valor de A");
+        A = entrada.nextInt();
+        System.out.print(s:"Ingrese el valor de B");
+        B = entrada.nextInt();
+        System.out.print(s:"Ingrese el valor de C");
+        C = entrada.nextInt();
+
+        AUX = C;
+        B = A;
+        C = A;
+        A = AUX;
+
+        System.out.println("Ahora A vale: + A");
+        System.out.println("Ahora B vale: + B");
+        System.out.println("Ahora C vale: + C");
+
+        entrada.close();
+    }
+}
