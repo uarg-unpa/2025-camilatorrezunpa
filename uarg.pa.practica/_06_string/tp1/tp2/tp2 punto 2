@@ -1,0 +1,22 @@
+package tp2;
+import java.util.Scanner {
+    public class Libro {
+        public static void main(String[] args) {
+            Scanner entrada = new Scanner(System.in);
+
+            String titulo, autor;
+            int paginas;
+
+            System.out.print("Ingrese el titulo del libro: ");
+            titulo = entrada.nextLine();
+            System.out.print("Ingrese el autor del libro: ");
+            autor = entrada.nextLine();
+            System.out.print("Ingrese la cantidad de paginas: ");
+            paginas = entrada.nextLine();
+            System.out.println("Libro: " + titulo);
+            System.out.println("Autor: " + autor);
+            System.out.println("Paginas: " + paginas);
+
+            entrada.close();
+        }
+    }
