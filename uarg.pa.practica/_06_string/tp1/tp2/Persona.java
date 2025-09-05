@@ -1,5 +1,3 @@
-package tp1.tp2;
-
 public class Persona {
 //Atributos
     String nombre;
@@ -25,12 +23,12 @@ public void setNombre(String Nombre)
 
 //otras operaciones
 //persona
-public boolean mayorDeEdad()
-{
+public boolean mayorDeEdad(){
     if(edad>=18)
         return true;
     else
         return false;
+    }
 }
 
 

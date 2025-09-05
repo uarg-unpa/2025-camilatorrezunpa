@@ -1,5 +1,3 @@
-package tp1.tp2;
-
 public class testPersona {
     public static void main(String[] args){
         int numero;
