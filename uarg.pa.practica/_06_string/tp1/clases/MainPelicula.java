@@ -25,7 +25,7 @@ public class MainPelicula {
         Genero g1 = new Genero(nombreGenero1, ratingGenero1);
         Pelicula p1 = new Pelicula(titulo1, director1, g1, año1, contenido1, duracion1);
 
-        System.out.println("\nIngrese título de la película:");
+        System.out.println("Ingrese título de la película:");
         String titulo2 = scanner.nextLine();
 
         System.out.println("Ingrese director de la película:");
