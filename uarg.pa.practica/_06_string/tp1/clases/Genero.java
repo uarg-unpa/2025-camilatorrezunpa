@@ -18,5 +18,8 @@ public class Genero {
     public void setRating(int rating){
         this.rating = rating;
     }
-    
+    public String toString(){
+        return "[ " + this.nombre + "] [ " + this.rating + "]";
+    }
+
 }

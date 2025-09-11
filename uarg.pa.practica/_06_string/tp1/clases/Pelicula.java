@@ -66,9 +66,9 @@ public class Pelicula {
         public int calcularDuracionMinutos(){
             return (duracion  * 60);
         }
-
-
-        
+        public String toString(){
+        return "[ " + this.titulo + "] [ " + this.director + "] [ " + this.genero + "] [ " + this.AniodePublicacion + "] [ " + this.contenidopelicula + "] [ " + this.duracion + "]";
+    }
 }
 
 
