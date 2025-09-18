@@ -1,0 +1,37 @@
+package tp1;
+import java.util.Scanner;
+
+public class Ejercicio6 {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int NUM1, NUM2, NUM3, SUMA, PRODUCTO;
+
+        System.out.printlin("Ingrese primer numero: ");
+        NUM1 = entrada.nextInt();
+        System.out.println("Ingrese segundo numero: ");
+        NUM2 = entrada.nextInt();
+        System.out.println("Ingrese tercer numero: ");
+        NUM3 = entrada.nextInt();
+
+        SUMA = NUM1 + NUM2 + NUM3;
+        PRODUCTO = NUM1 * NUM2 * NUM3;
+
+        System.out.println("La suma es: " + SUMA);
+        System.out.println("El producto es: " + PRODUCTO)
+
+        int NUM, SUMA2 = 0, PRODUCTO2 = 1;
+
+        for(int i = 1; i <= 3; i++) {
+            System.out.print("Ingrese numero " + i + ": ");
+            NUM = entrada.nextInt();
+            SUMA2 = SUMA2 + NUM;
+            PRODUCTO2 = PRODUCTO2 * NUM;
+        }
+
+        System.out.println("La suma (con 1 variable) es: " + SUMA2);
+        System.out.println("El producto (con 1 variable) es: " + PRODUCTO2);
+
+        entrada.close();
+    }
+}
