@@ -22,9 +22,28 @@ public class Teatro {
     public void setDireccion(String direccion){
         this.direccion = direccion;
     }
-
-    public void setObra(Obra obras){
-        this.obra = obra;
+    
+    public Obra getObra(int index){
+        if(index >=0 && index < obras.length) {
+            return obras[index];
+        }
+        return null;
     }
 
+    public void setObra(int index, Obra obra){
+        if (index >= 0 && index < obras.length){
+            obras[index] = obra;
+        }
+    }
+
+    public void mostrarObras(){
+        System.out.println("Obras en cartelera: ");
+        for(int i = 0; i < obras.length; i++){
+            if(obras[i] != null){
+                System.out.println((i+1) + ". " + obras[i]);
+            } else {
+                System.out.println((i+1) + ". [Sin obra asignada]");
+            }
+        }
+    }
 }
