@@ -1,9 +1,9 @@
 public class Teatro {
     private String nombre;
-    private Direccion direccion;
+    private String direccion;
     private Obra[] obras;
 
-    public Teatro(String nombre, Direccion direccion){
+    public Teatro(String nombre, String direccion){
         this.nombre = nombre;
         this.direccion = direccion;
         this.obras = new Obra [3];
@@ -16,14 +16,14 @@ public class Teatro {
         this.nombre = nombre;
     }
 
-    public Direccion getDireccion(){
+    public String getDireccion(){
         return direccion;
     }
-    public void setDireccion(Direccion direccion){
+    public void setDireccion(String direccion){
         this.direccion = direccion;
     }
 
-    public void setObra(Obra obra){
+    public void setObra(Obra obras){
         this.obra = obra;
     }
 

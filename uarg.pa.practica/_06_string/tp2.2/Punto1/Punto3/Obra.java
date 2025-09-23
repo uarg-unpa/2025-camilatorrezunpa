@@ -23,6 +23,6 @@ public class Obra {
     
     @Override
     public String toString(){
-        return "Obra: " + nombre + "- Precio: $" + precio;
+        return "[Obra: " + nombre + ", Precio: $" + precio + "]";
     }
 }
