@@ -1,10 +1,11 @@
-public class PilaChar {
-    
+package TP3.PUNTO6;
+
+public class Pilaoperaciones {
     private char [] elementos;
     private int cima;
     private final int maxpila = 10;
 
-    public PilaChar(){
+    public Pilaoperaciones() {
         elementos = new char[maxpila];
         cima = -1;
     }
@@ -40,9 +41,4 @@ public class PilaChar {
         return aux;
     }
 
-    public elementoCima(){
-    }
-
 }
-
-    
