@@ -41,12 +41,12 @@ public class Pilacima {
     }
 
     public char elementoCima(){
-        if(!this.estaVacia()){
-            return elementos[cima];
-        } else {
-            return ' ';
-        }
+        char x;
+        x = this.sacar(); 
+        this.meter(x);     
+        return x;   
     }
 }
+
 
     
