@@ -32,5 +32,4 @@ public class ColaInt {
         fin--; //reduce fin tras el desplazamiento
         return aux;
     }
-    
 }
