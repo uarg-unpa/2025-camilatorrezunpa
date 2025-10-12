@@ -2,13 +2,11 @@ public class Producto {
     private String nombre;
     private double precio;
     private int cantidadEnStock;
-    private int stock;
 
-    public Producto(String nombre, double precio, int cantidadEnStock, int stock){
+    public Producto(String nombre, double precio, int cantidadEnStock){
         this.nombre = nombre;
         this.precio = precio;
         this.cantidadEnStock = cantidadEnStock;
-        this.stock = stock;
     }
 
     public String getNombre(){
@@ -25,49 +23,43 @@ public class Producto {
         this.precio = precio;
     }
 
-    public int getcantidadEnStock(){
+    public int getCantidadEnStock(){
         return cantidadEnStock;
     }
-    public void setcantidadEnStock(int cantidadEnStock){
+    public void setCantidadEnStock(int cantidadEnStock){
         this.cantidadEnStock = cantidadEnStock;
     }
 
-    public int getStock(){
-        return stock;
-    }
-    public void setStock(int stock){
-        this.stock = stock;
-    }
-
     public boolean hayStock(int cantidad){
-        if(stock > cantidadEnStock){
-            return true;
-        } else {
-            return false;
-        }
+        return cantidadEnStock >= cantidad;
     }
+    
 
-    public void vender(int cantidad){
+    public boolean vender(int cantidad){
         if(hayStock(cantidad)){
-            this.cantidadEnStock = cantidadEnStock--;
+            cantidadEnStock -= cantidad;
+            return true;
         }
+        return false;
     }
 
     public void aumentarStock(int cantidad){
         if(hayStock(cantidad)){
-            this.cantidadEnStock = cantidadEnStock++;
+           cantidadEnStock += cantidadEnStock;
         }
     }
 
-    public void tieneMasStockQue(Producto otroProducto){
-       if (this.cantidadEnStock > otroProducto.getStock());
+    public boolean tieneMasStockQue(Producto otro){
+       if (this.cantidadEnStock > otro.getCantidadEnStock()){
         return true;
-    }else{
+       } else {
         return false;
+       }
     }
 
+
     public String toString(){
-        return "Producto: [nombre:" + nombre + ", precio: " + precio + ", cantidadEnStock: " + cantidadEnStock + ", stok: " + stock +"]";
+        return "Producto: [nombre:" + nombre + ", precio: " + precio + ", cantidadEnStock: " + cantidadEnStock +"]";
     }
 }
     
