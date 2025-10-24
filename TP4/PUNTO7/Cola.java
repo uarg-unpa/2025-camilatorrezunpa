@@ -1,18 +1,19 @@
-public class ColaFrenteFijoFinalMovible {
+package TP4.PUNTO7;
 
+public class Cola {
     private int[] elementos;
     private int frente;
     private int fin;
     private final int MAX = 10;
 
-    public ColaFrenteFijoFinalMovible() {
+    public Cola() {
         elementos = new int[MAX];
         frente = 0;
         fin = 0;
     }
 
     public boolean estaVacia() {
-        return fin == 0;
+        return frente == fin;
     }
 
     public boolean estaLlena() {
@@ -20,8 +21,10 @@ public class ColaFrenteFijoFinalMovible {
     }
 
     public void encolar(int elem) {
-        elementos [fin] = elem;
-        fin++;
+        if (!estaLlena()) {
+            elementos [fin] = elem;
+            fin++;
+        }
     }
 
     public int desencolar() {
@@ -32,3 +35,5 @@ public class ColaFrenteFijoFinalMovible {
         fin--;
         return aux;
     }
+
+}

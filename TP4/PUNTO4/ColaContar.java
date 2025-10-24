@@ -37,6 +37,6 @@ public class ColaContar {
     }
 
     public int contar() {
-        return fin - frente;
+        return fin;
     }
 }
