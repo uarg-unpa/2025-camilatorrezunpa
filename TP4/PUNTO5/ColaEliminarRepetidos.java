@@ -38,8 +38,29 @@ public class ColaEliminarRepetidos {
 
     public void eliminarRepetidos() {
         ColaEliminarRepetidos aux = new ColaEliminarRepetidos();
-        while(!this.estaVacia()){
+        int[] visitados = new int[MAX];
+        int cantVisitados = 0;
 
+        while(!this.estaVacia()){
+            int elem = desencolar();
+            boolean repetido = false;
+
+            for (int i = 0; i < cantVisitados; i++) {
+                if(visitados[i] == elem){
+                    repetido = true;
+                    break;
+                }
+            }
+
+            if(!repetido){
+                 visitados[cantVisitados] = elem;
+                cantVisitados++;
+                aux.encolar(elem);
+            }
+        }
+
+        while (!aux.estaVacia()){
+            encolar(aux.desencolar());
         }
     }
 }

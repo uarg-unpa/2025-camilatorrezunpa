@@ -11,18 +11,11 @@ public class PilaEntero {
     }
 
     public boolean estaVacia () {
-        if (cima == -1){
-            return true;
-        }else{
-            return false;
-        }
+        return cima == -1;
     }
+
     public boolean estaLlena(){
-        if(cima == maxpila - 1){
-            return true;
-        }else{
-            return false;
-        }
+        return cima == maxpila - 1;
     }
 
     public void meter(int elem) {
@@ -32,12 +25,13 @@ public class PilaEntero {
         }
     }
 
-     public int sacar() {
+    public int sacar() {
         if (!estaVacia()) {
             int elem = elementos[cima];
             cima--;
             return elem;
         }
+        return -1;
     }
 
     public int contarOcurrencias (int elem){
@@ -48,14 +42,14 @@ public class PilaEntero {
             int elemento = sacar();
             if(elemento == elem) {
                 contador++;
-                aux.meter(elemento);
-
-                while(!aux.estaVacia()) {
-                    meter(aux.sacar());
-                    return contador;
-                }
             }
+            aux.meter(elemento);
         }
 
+        while(!aux.estaVacia()) {
+            meter(aux.sacar());
+        }
+        
+        return contador;
     }
-}  
+}
