@@ -25,10 +25,10 @@ public class PilaChar {
         }
     }
 
-    public void meter(char e) {
+    public void meter(char elem) {
         if (!this.estaLlena()){
             cima++;
-            elementos[cima]=e;
+            elementos[cima]=elem;
         }
     }
 
@@ -40,8 +40,6 @@ public class PilaChar {
         }
         return aux;
     }
-
 }
-
     
 
