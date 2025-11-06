@@ -36,7 +36,7 @@ public class PilaEntero {
         return -1;
     }
 
-    public PilaEntero intercalar(Pila p1, Cola c1){
+    public Pila intercalar(Pila p1, Cola c1){
         Pila p2 = new Pila();
         Pila auxp = new Pila();
         Cola auxc = new Cola();
