@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MainCantidadVocalesPila",
+            "request": "launch",
+            "mainClass": "MainCantidadVocalesPila",
+            "projectName": "2025-camilatorrezunpa_f0ffc793"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

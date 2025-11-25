@@ -1,13 +1,13 @@
 package practicap2meet;
 
-public class ColaSacarVehiculo {
+public class ColaEliminarNegativos {
     private int[] elementos;
     private int frente;
     private int fin;
-    private final int MAX = 10;
-
-    public ColaSacarVehiculo(){
-        elementos = new int [MAX];
+    private final int MAX=10;
+    
+    public ColaEliminarNegativos(){
+        elementos = new int[MAX];
         frente = 0;
         fin = 0;
     }
@@ -34,22 +34,22 @@ public class ColaSacarVehiculo {
         return aux;
     }
 
-    public void eliminarCuarto(){
-        ColaSacarVehiculo aux = new ColaSacarVehiculo();
-        int contador = 0;
+    public void eliminarNegativo (){
+        ColaEliminarNegativos aux = new ColaEliminarNegativos();
 
         while(!this.estaVacia()){
-            contador++;
             int elem = this.desencolar();
 
-            if (contador != 4){
+            if(elem >= 0){
                 aux.encolar(elem);
             }
         }
 
-        while(!aux.estaVacia()){
+        while (!aux.estaVacia()){
             this.encolar(aux.desencolar());
         }
     }
+
+
 
 }
