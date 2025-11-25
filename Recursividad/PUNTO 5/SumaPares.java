@@ -8,10 +8,9 @@ public class SumaPares {
         } 
 
         if (n % 2 == 0){
-            return n + sumaPar(n -2);
+            return n + sumaPar(n-2);
         } else {
             return sumaPar(n-1);
         }
-    
     }
 }
