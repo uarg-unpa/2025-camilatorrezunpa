@@ -1,0 +1,119 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "MainCantidadVocalesPila",
+            "request": "launch",
+            "mainClass": "MainCantidadVocalesPila",
+            "projectName": "2025-camilatorrezunpa_f0ffc793"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "EjemploScanner_01",
+            "request": "launch",
+            "mainClass": "EjemploScanner_01",
+            "projectName": "2025-camilatorrezunpa_f0ffc793"
+        },
+        {
+            "type": "java",
+            "name": "EjemploScanner_02",
+            "request": "launch",
+            "mainClass": "EjemploScanner_02",
+            "projectName": "2025-camilatorrezunpa_f0ffc793"
+        },
+        {
+            "type": "java",
+            "name": "testPilaChar",
+            "request": "launch",
+            "mainClass": "TP3.PUNTO3.PUNTO3.testPilaChar",
+            "projectName": "2025-camilatorrezunpa_f0ffc793"
+        },
+        {
+            "type": "java",
+            "name": "testPilacima",
+            "request": "launch",
+            "mainClass": "TP3.PUNTO3.PUNTO5.testPilacima",
+            "projectName": "2025-camilatorrezunpa_f0ffc793"
+        },
+        {
+            "type": "java",
+            "name": "MainPilaOperaciones",
+            "request": "launch",
+            "mainClass": "TP3.PUNTO6.MainPilaOperaciones",
+            "projectName": "2025-camilatorrezunpa_f0ffc793"
+        },
+        {
+            "type": "java",
+            "name": "MainColaInt$MainCola",
+            "request": "launch",
+            "mainClass": "TP4.Cola.MainColaInt$MainCola",
+            "projectName": "2025-camilatorrezunpa_f0ffc793"
+        },
+        {
+            "type": "java",
+            "name": "MainColaChar",
+            "request": "launch",
+            "mainClass": "TP4.Cola.PUNTO1.MainColaChar",
+            "projectName": "2025-camilatorrezunpa_f0ffc793"
+        },
+        {
+            "type": "java",
+            "name": "MainColaNombres",
+            "request": "launch",
+            "mainClass": "TP4.Cola.PUNTO2.MainColaNombres",
+            "projectName": "2025-camilatorrezunpa_f0ffc793"
+        },
+        {
+            "type": "java",
+            "name": "MainPilaCola",
+            "request": "launch",
+            "mainClass": "TP4.PUNTO7.MainPilaCola",
+            "projectName": "2025-camilatorrezunpa_f0ffc793"
+        },
+        {
+            "type": "java",
+            "name": "MainCadenaCaracteres",
+            "request": "launch",
+            "mainClass": "TP4.PUNTO8.MainCadenaCaracteres",
+            "projectName": "2025-camilatorrezunpa_f0ffc793"
+        },
+        {
+            "type": "java",
+            "name": "MainCola",
+            "request": "launch",
+            "mainClass": "TP4.Tarea.MainCola",
+            "projectName": "2025-camilatorrezunpa_f0ffc793"
+        },
+        {
+            "type": "java",
+            "name": "MainPilaControlNiveles",
+            "request": "launch",
+            "mainClass": "TP4.Tarea.MainPilaControlNiveles",
+            "projectName": "2025-camilatorrezunpa_f0ffc793"
+        },
+        {
+            "type": "java",
+            "name": "TestPilaEntero",
+            "request": "launch",
+            "mainClass": "TP4.Tarea.TestPilaEntero",
+            "projectName": "2025-camilatorrezunpa_f0ffc793"
+        },
+        {
+            "type": "java",
+            "name": "testPersona",
+            "request": "launch",
+            "mainClass": "testPersona",
+            "projectName": "2025-camilatorrezunpa_f0ffc793"
+        }
+    ]
+}

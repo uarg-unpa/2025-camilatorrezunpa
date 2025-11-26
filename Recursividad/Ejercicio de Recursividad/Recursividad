@@ -1,0 +1,24 @@
+//Ejercicio de Recursividad – Para subir al repositorio
+// 1) Consignas: Identificar el caso base y el caso general.
+// 2) Detectar los errores que tiene esta función recursiva.
+// 3) Explicar qué hace esta función tal como está escrita.
+// 4) Proponer qué mensaje podría ir en el System.out.println.
+
+// Explorar el siguiente fragmento de código:
+public void queHago(int n) {
+    if (n == 0) {  // Caso Base
+        System.out.println("¡Que mensaje puede ir aca?!");
+    } else {
+        System.out.println(n); //Caso general (Pero esta mal porque no cambia n)
+        queHago(n); 
+    }
+}
+
+// 2) Errores :La recursion nunca avanza, nunca cambia el valor de n. Nunca llegariamos al caso base
+
+// 3) Lo que hace esta funcion es que si el número es 0 lo imprime y termina.
+// Si es otro numero distinto de 0 imprime ese numero siempre, nunca termina
+
+// 4) El mensaje que podria ir en el System.out.println es "Fin", "Termina"
+
+
