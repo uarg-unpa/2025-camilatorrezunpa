@@ -4,7 +4,7 @@
 public class ArregloNum {
     
     public static boolean estaPresenteArreglo(int [] arreglo, int num, int i){
-        if (i < 0){
+        if (i < 0){        // if (i == arreglo.length)
             return false;
         } 
 
@@ -12,6 +12,6 @@ public class ArregloNum {
             return true;
         }
         
-        return estaPresenteArreglo(arreglo, num, i - 1);
+        return estaPresenteArreglo(arreglo, num, i - 1); // +1
     }
 }

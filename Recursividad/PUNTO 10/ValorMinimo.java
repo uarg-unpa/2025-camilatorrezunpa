@@ -2,17 +2,17 @@
 //Pista: Divide el problema en dos partes: el elemento actual y el mínimo de los elementos restantes del arreglo. 
 
 public class ValorMinimo {
-    public static int valorMin (int [] arreglo, int n){
-        if (n == 0){
-            return arreglo[0];
-        } 
-
-        int minRestante = valorMin(arreglo, n - 1);
-
-        if (arreglo[n] < minRestante){
-            return arreglo[n];
+    public static int valorMin (int [] arreglo, int i){
+        if (i == arreglo.length - 1){
+            return arreglo[i];
         } else {
-            return minRestante;
+            int minRestante = valorMin(arreglo, i + 1);
+            if(arreglo [i] < minRestante){
+                return arreglo[i];
+            } else {
+                return minRestante;
+            }
         }
+        
     }
 }

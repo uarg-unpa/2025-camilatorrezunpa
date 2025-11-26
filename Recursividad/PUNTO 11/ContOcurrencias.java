@@ -3,18 +3,16 @@
 
 public class ContOcurrencias {
 
-    public static int contOcurrencias (int [] arreglo, int n, int x){
-        if (n < 0){
+    public static int contOcurrencias (int [] arreglo, int n, int i){
+        if (i == arreglo.length){
             return 0;
-        } 
-
-        int suma = 0;
-
-        if (arreglo[n] == x){
-            suma = 1;
-        } 
-
-        return suma + contOcurrencias(arreglo, n - 1, x);
-
+        } else {
+            if (arreglo[i] == n){
+                return 1 + contOcurrencias(arreglo, n, i + 1);
+            } else {
+                return contOcurrencias(arreglo, n, i+1);
+            }
+        }
     }
 }
+
